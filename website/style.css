@@ -1,0 +1,283 @@
+* { box-sizing: border-box; }
+header, nav, main, footer  { display: block; }
+
+body {
+  background-image: url(image/fly.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100%;
+
+}
+header {
+width: auto;
+height: auto;
+border: 1px solid black;
+background-color: white;
+}
+
+div.slide-up {
+  height:200px;
+  overflow:hidden;
+}
+div.slide-up h1 {
+  animation: 1.5s slide-up;
+  margin-top:0%;
+  text-align: center;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 20%;
+    height: 50%;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+
+
+
+.time {
+  color: navy;
+  font-weight: bold;
+}
+.time a {
+  color: red;
+  text-decoration: none;
+}
+main {
+      display:block;
+	    margin-top: 10em;
+      background-color: white;
+      width:100%;
+
+}
+
+.mid {
+  text-align: center;
+}
+
+.try {
+  padding-top: 2em;
+  color: white;
+  font-size: 40px;
+  font-family:serif;
+
+}
+table {
+  padding-top: 6em;
+  padding-bottom: 5em;
+  padding-left: 3em;
+}
+.htwo {
+  color: orange;
+
+}
+
+
+footer {
+  height: auto;
+  color: white;
+  background-color: black;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 2em;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+#wrapper { width: 80%;
+           margin-left: auto;
+		   margin-right: auto;
+		   background-color: #F5F5F5;
+		   min-width: 1200px;
+		   max-width: 1480px;
+}
+#mobile { display: none;}
+#desktop{ display: inline;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pad {
+  padding-left: 1em;
+  padding-right: 2em;
+}
+.htwo {
+  padding-left: 1em;
+  padding-right: 2em
+}
+.sun {
+  padding-left: 14em;
+  padding-bottom: 4em;
+  padding-top: 1em;
+}
+.div2 {
+  box-sizing: border-box;
+  width: 100%;
+  border: 100px solid black;
+  float: left;
+  align-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+}
+h4{
+ font-weight: bold;
+ font-size: 30px;
+ padding-top: 1em;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width:1024px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  #wrapper {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 2.5em 1em;
+    margin: 0;
+    font-size: 90%;
+    clear: both;
+  }
+   td {
+     display: block;
+    width: 100%;
+
+  }
+  #main img {
+    width: 100%;
+    height: auto;
+  }
+  .sun {
+    padding: 2em;
+  }
+}
+/*sizing for every device */
+@media only screen and (max-width:768px){
+  /*for tablet*/
+  .main{
+  width: 80%;
+  padding: 0;
+  }
+  .right{
+  width: 100%;
+  }
+  main {
+    padding-top: 0;
+  }
+  td {
+    display: block;
+    width: 100%;
+  }
+  table {
+    padding-left: 0;
+    padding-right: 0;
+  }
+#main {
+  display: none;
+}
+  footer {
+    padding: 0.5em;
+    margin: 0;
+  }
+  .try {
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+  }
+ .sun {
+    display: none;
+
+  }
+
+  #mobile {display: inline;}
+  #desktop {display: none;}
+}
